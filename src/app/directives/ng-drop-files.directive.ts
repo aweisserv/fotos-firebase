@@ -14,4 +14,9 @@ export class NgDropFilesDirective {
     this.mouseSobre.emit( true );
   }
 
+  @HostListener('dragleave', ['$event'])
+  public onDragLeave( event: any ) {
+    this.mouseSobre.emit( false );
+  }
+
 }
