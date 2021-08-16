@@ -18,7 +18,7 @@
         <h4 class="mb-5">Cargar archivos</h4>
         
         <button (click)="cargarImagenes()" [disabled]="archivos.length === 0" class="btn ngreen">Cargar a Firebase</button>
-        <button class="btn m-2 nskyblue">Limpiar</button>
+        <button (click)="limpiarArchivos()" class="btn m-2 nskyblue">Limpiar</button>
 
         <table class="table">
             <thead class="thead-dark">
@@ -30,12 +30,12 @@
 
             </thead>
             <tbody class="thead-dark">
-                <tr>
-                    <th>XYZ</th>
-                    <th>12 MB</th>
+                <tr *ngFor="let archivo of archivos">
+                    <th>{{ archivo.nombreArchivo }}</th>
+                    <th>{{ archivo.archivo.size / 1024 /1024 | number: '.2-2' }} MB</th>
                     <th>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 25%" ></div>
+                            <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': archivo.progreso + '%' }" ></div>
                         </div>
                     </th>
                 </tr>
