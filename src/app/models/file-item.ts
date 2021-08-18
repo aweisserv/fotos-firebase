@@ -2,7 +2,7 @@ export class FileItem {
 
     public archivo: File;
     public nombreArchivo: string;
-    public url?: string;
+    public url: any;
     public estaSubiendo: boolean;
     public progreso: number;
 
