@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
-export interface Item { name: string; url: any; }
+export interface Item { nombre: string; url: any; }
 
 @Component({
   selector: 'app-fotos',
@@ -11,9 +11,14 @@ export interface Item { name: string; url: any; }
 export class FotosComponent implements OnInit {
 
   private itemsCollection: AngularFirestoreCollection<Item>;
-  items: Observable<Item[]>;
+  public items: Observable<Item[]>;
 
-  constructor() { }
+  constructor( private afs: AngularFirestore ) {
+
+    this.itemsCollection = afs.collection<Item>('items');
+    this.items = this.itemsCollection.valueChanges();
+
+   }
 
   ngOnInit(): void {
   }
