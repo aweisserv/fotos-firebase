@@ -4,9 +4,12 @@
 | Allan Weisser Verdessi
 | a.weisser.v@gmail.com
 
+
+<img align="left" alt="Angular" width="23px" src="https://user-images.githubusercontent.com/19677373/135019551-2c513f0a-69f6-49f8-b525-923b7bb9ffb6.png" />
+<img align="left" alt="TS" width="23px" src="https://user-images.githubusercontent.com/19677373/135018966-b1ee5d5a-a442-4564-9daa-47bab1a6f7a9.png" />
+<img align="left" alt="Bootstrap" width="23px" src="https://user-images.githubusercontent.com/19677373/135018970-237c147b-2e25-477f-845b-5ff74c07294b.png" />
 <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
-<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
-<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+<img align="left" alt="Firebase" width="18px" src="https://user-images.githubusercontent.com/19677373/135018977-9f993a94-a61b-4911-a7b9-b62fffccbdab.png" />
 
 <br><br>
 
